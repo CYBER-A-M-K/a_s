@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN_IN</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body align="center" bgcolor="black" style="color: red;">
+    <h1><u><b>HACK</b></u></h1>
+    <hr width="200">
+    <hr>
+    <h3><b>-if you want information about "Hack" please enter about yourself</b></h3>
+    <div class="container">
+        <h2>login</h2>
+        <form id="myForm" action="pa2.html" method="get">
+            <div class="input-group">
+                <label for="name">name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="age">age:</label><br>
+                <input type="number" id="age" name="age"><br><br>
+                <label for="email">email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+            </div>
+            <label for="gender">
+                gender: <br><br>
+                <u>male</u>
+                <input type="radio" id="gender" name="gender" value="male">
+                female
+                <input type="radio" id="gender" name="gender" value="female">
+                other
+                <input type="radio" id="gender" name="gender" value="other">
+            </label><br><br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

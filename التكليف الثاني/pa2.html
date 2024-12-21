@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explan</title>
+    <style>
+        body {
+            background: radial-gradient(circle, red, black);
+            font-family: Arial, sans-serif;
+            color: blue;
+            text-align: center;
+            padding: 50px;
+        }
+        .info-group {
+            margin-bottom: 15px;
+        }
+        .info-group strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .articles {
+            margin-top: 30px;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-message">
+        <h2>Welcome!</h2>
+    </div>
+    <div class="info-group">
+        <strong>Name:</strong> <span id="displayName"></span>
+        <strong>Age:</strong> <span id="displayAge"></span>
+        <strong>Email:</strong> <span id="displayEmail"></span>
+        <strong>Gender:</strong> <span id="displayGender"></span>
+    </div>
+    <a href="D:\اكواد html\homework\التكليف الثاني\تكليف الاله الحاسبة\CAL.html"><h2>اله حاسبه</h2></a>
+    <div class="articles">
+        <h2>Articles on Hacking and Security</h2>
+        <div class="article">
+            <h3>Understanding Cybersecurity</h3>
+            <p>Cybersecurity involves protecting computer systems and networks from theft, damage, and unauthorized access. It is crucial in today's digital age to safeguard personal and sensitive information.</p>
+        </div>
+        <div class="article">
+            <h3>Common Hacking Techniques</h3>
+            <p>Hackers use various techniques to exploit vulnerabilities in systems. Some common methods include phishing, malware, and social engineering. Understanding these techniques can help in defending against them.</p>
+        </div>
+        <div class="article">
+            <h3>How to Protect Yourself Online</h3>
+            <p>To protect yourself online, use strong passwords, enable two-factor authentication, and be cautious of suspicious emails and links. Regularly updating your software and using antivirus programs can also enhance your security.</p>
+        </div>
+        <div class="article">
+            <h3>The Role of Ethical Hacking</h3>
+            <p>Ethical hacking involves authorized attempts to gain access to computer systems to find security vulnerabilities. Ethical hackers use their skills to improve security and prevent malicious attacks.</p>
+        </div>
+        <div class="article">
+            <h3>Introduction to Penetration Testing</h3>
+            <p>Penetration testing, or pen testing, is a simulated cyber attack on a computer system to evaluate its security. It helps in identifying and fixing security weaknesses before they can be exploited by attackers.</p>
+        </div>
+        <div class="article">
+            <h3>The Impact of Ransomware</h3>
+            <p>Ransomware is a type of malware that encrypts a victim's files and demands a ransom to restore access. It has become a significant threat to individuals and organizations, requiring robust security measures to defend against it.</p>
+        </div>
+        <div class="article">
+            <h3>Phishing Attacks and How to Avoid Them</h3>
+            <p>Phishing attacks involve tricking individuals into providing personal information through deceptive emails and websites. Awareness and education are key to recognizing and avoiding these attacks.</p>
+        </div>
+        <div class="article">
+            <h3>Social Engineering: The Human Element of Cybersecurity</h3>
+            <p>Social engineering exploits human psychology to gain access to sensitive information. Training and awareness can help individuals recognize and resist social engineering tactics.</p>
+        </div>
+        <div class="article">
+            <h3>Mobile Security: Protecting Your Devices</h3>
+            <p>Mobile devices are increasingly targeted by cyber attacks. Using security measures such as encryption, strong passwords, and secure connections can help protect your mobile data.</p>
+        </div>
+        <div class="article">
+            <h3>Future Trends in Cybersecurity</h3>
+            <p>The field of cybersecurity is constantly evolving. Staying informed about emerging threats and new technologies is essential for maintaining robust security in the future.</p>
+        </div>
+    </div>
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const age = urlParams.get('age');
+        const email = urlParams.get('email');
+        const gender = urlParams.get('gender');
+
+        document.getElementById('displayName').textContent = name;
+        document.getElementById('displayAge').textContent = age;
+        document.getElementById('displayEmail').textContent = email;
+        document.getElementById('displayGender').textContent = gender;
+    </script>
+</body>
+</html>
